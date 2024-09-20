@@ -1,6 +1,6 @@
 use std::sync::atomic::Ordering;
 
-pub fn increse_counter() {
+pub fn increase_counter() {
     some_crate::GLOBAL_COUNTER.fetch_add(1, Ordering::AcqRel);
 }
 
